@@ -17,14 +17,17 @@ create_augmentation_train_file.ipynib  :
  
 Columns                  |            |                       Explanation   	
 ___________________________________________________________________________________________________________________________________
-essay_id                   | ===> |        A column conatining each essay Id for reference purposes
-prompt_id              | ===> |        The prompt id used for each generation of text
-text                             | ===> |         The essays themselfs
-generated               | ===> |         Labels the 'text' column as LLM generated(1) and student(0) 
-label                            | ===> |          Same as 'generated' for plotting purposes
-token_text              | ===> |          Tokenized text for the preprocessing procedure and jaccard similarity
-max_jaccard_sim | ===> |          Calculated maximum jaccard similarity only for each LLM essay(generated==1) compared to all the student essays(generated==0)
-avg_jaccard_sim  | ===> |          Calculated average jaccard similarity only for each LLm essay (generated==1)  compared to all the student essays(generated==0)
+essay_id: A column conatining each essay Id for reference purposes
+prompt_id: The prompt id used for each generation of text
+text: The essays themselfs
+generated: Labels the 'text' column as LLM generated(1) and student(0) 
+label: Same as 'generated' for plotting purposes
+
+token_text: Tokenized text for the preprocessing procedure and jaccard similarity
+
+max_jaccard_sim: Calculated maximum jaccard similarity only for each LLM essay(generated==1) compared to all the student essays(generated==0)
+
+avg_jaccard_sim :Calculated average jaccard similarity only for each LLm essay (generated==1)  compared to all the student essays(generated==0)
 
 
 					JACCARD SIMILARITY(similarity scores task)
